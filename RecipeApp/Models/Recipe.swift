@@ -19,6 +19,6 @@ struct Recipe: Decodable , Identifiable {
     private enum CodingKeys: String, CodingKey {
         case id = "pk"
         case title = "title"
-        case featuredImage = "featured_Image"
+        case featuredImage = "featured_image"
     }
 }

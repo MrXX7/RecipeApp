@@ -8,7 +8,6 @@
 import Foundation
 
 @MainActor
-
 class NetworkModel: ObservableObject {
     
     @Published var recipes: [Recipe] = []
@@ -21,4 +20,5 @@ class NetworkModel: ObservableObject {
         let recipeResponse = try JSONDecoder().decode(RecipeResponse.self, from: data)
         recipes = recipeResponse.results
     }
+    
 }
